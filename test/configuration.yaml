@@ -1,0 +1,62 @@
+homeassistant:
+  auth_providers:
+    - type: homeassistant
+    - type: legacy_api_password
+  name: Panel
+  latitude: 50.091935
+  longitude: 20.065541
+  elevation: 200
+  unit_system: metric
+  time_zone: Europe/Warsaw
+
+updater:
+
+logbook:
+
+discovery:
+
+logger:
+  default: info
+
+config:
+
+history:
+
+websocket_api:
+
+weather:
+  - platform: yweather
+
+map:
+
+http:
+  api_password: admin1234
+  server_host: '0.0.0.0'
+  server_port: 8123
+  cors_allowed_origins:
+    - http://localhost:9000
+
+sun:
+
+switch:
+  - platform: command_line
+    switches:
+      kitchen_light:
+        command_on: ls
+        command_off: ls
+      humidifier:
+        command_on: ls
+        command_off: ls
+      coffee_maker:
+        command_on: ls
+        command_off: ls
+  - platform: wake_on_lan
+    mac_address: "00-01-02-03-04-05"
+
+light:
+  - platform: rpi_gpio_pwm
+    leds:
+      - name: Lightstrip Cupboard
+        driver: gpio
+        pins: [17]
+        type: simple

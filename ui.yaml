@@ -1,0 +1,29 @@
+title: My Panel
+forecast:
+
+pages:
+  - name: 'Salon'
+    icon: 'mdi:couch'
+    groups:
+      - name: 'Światła'
+        tiles:
+          - name: Żyrandol
+            icon: 'top'
+            entity_id: light.living_room
+          - name: Telewizor
+            icon: 'tv'
+            entity_id: light.living_room
+          - name: Biuroko
+            icon: 'tv'
+            entity_id: light.living_room
+      - name: 'Media'
+        tiles:
+          - name: Telewizor
+            entity_id: media_player.tv
+          - name: Telewizor
+            entity_id: media_player.spotify
+      - name: 'Środowisko'
+        tiles:
+          - name: Temperatura
+            entity_id: sensor.temp
+            

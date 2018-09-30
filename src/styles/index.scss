@@ -1,0 +1,18 @@
+$background-color: #1d1d1d;
+$text-color: #fff;
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
+  height: 100vh !important;
+  background-color: $background-color;
+  color: $text-color;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+

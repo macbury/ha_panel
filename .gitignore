@@ -1,0 +1,6 @@
+node_modules/**/*
+*.log
+dist/**/*
+.storage/auth/**
+test/.uuid
+test/.HA_VERSION
